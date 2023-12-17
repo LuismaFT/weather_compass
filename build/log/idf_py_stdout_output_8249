@@ -1,0 +1,1909 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-892-g692c1fcc52 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 16 2023 18:21:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=27d70h (163184) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037d98 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=00037da4 vaddr=3ffb0000 size=03ca8h ( 15528) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=0003ba54 vaddr=40080000 size=045c4h ( 17860) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9ccb0h (642224) map[0m
+[0;32mI (403) esp_image: segment 5: paddr=000dccd8 vaddr=400845c4 size=12190h ( 74128) load[0m
+[0;32mI (443) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (443) boot: Disabling RNG early entropy source...[0m
+[0;32mI (455) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu start user code[0m
+[0;32mI (464) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (464) cpu_start: Application information:[0m
+[0;32mI (467) cpu_start: Project name:     weather-compass[0m
+[0;32mI (472) cpu_start: App version:      1[0m
+[0;32mI (477) cpu_start: Compile time:     Dec 16 2023 18:22:50[0m
+[0;32mI (483) cpu_start: ELF file SHA256:  8336f40b3...[0m
+[0;32mI (488) cpu_start: ESP-IDF:          v5.3-dev-892-g692c1fcc52[0m
+[0;32mI (495) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (499) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (504) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (509) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (516) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (522) heap_init: At 3FFB84A0 len 00027B60 (158 KiB): DRAM[0m
+[0;32mI (529) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 40096754 len 000098AC (38 KiB): IRAM[0m
+[0;32mI (549) spi_flash: detected chip: generic[0m
+[0;32mI (552) spi_flash: flash io: dio[0m
+[0;33mW (556) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (570) main_task: Started on CPU0[0m
+[0;32mI (580) main_task: Calling app_main()[0m
+Calibration Success
+Calibration Success
+Calibration Success
+Calibration Success
+[0;32mI (600) example_connect: Start example_connect.[0m
+I (610) wifi:wifi driver task: 3ffc0168, prio:23, stack:6656, core=0
+I (610) wifi:wifi firmware version: 8e5c2b1
+I (610) wifi:wifi certification version: v7.0
+I (610) wifi:config NVS flash: enabled
+I (610) wifi:config nano formating: disabled
+I (620) wifi:Init data frame dynamic rx buffer num: 32
+I (620) wifi:Init static rx mgmt buffer num: 5
+I (630) wifi:Init management short buffer num: 32
+I (630) wifi:Init dynamic tx buffer num: 32
+I (630) wifi:Init static rx buffer size: 1600
+I (640) wifi:Init static rx buffer num: 10
+I (640) wifi:Init dynamic rx buffer num: 32
+[0;32mI (650) wifi_init: rx ba win: 6[0m
+[0;32mI (650) wifi_init: tcpip mbox: 32[0m
+[0;32mI (650) wifi_init: udp mbox: 6[0m
+[0;32mI (660) wifi_init: tcp mbox: 6[0m
+[0;32mI (660) wifi_init: tcp tx win: 5744[0m
+[0;32mI (670) wifi_init: tcp rx win: 5744[0m
+[0;32mI (670) wifi_init: tcp mss: 1440[0m
+[0;32mI (670) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (680) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (680) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (770) wifi:mode : sta (a8:42:e3:ce:1a:50)
+I (770) wifi:enable tsf
+[0;32mI (770) example_connect: Connecting to Livebox6-354B...[0m
+[0;32mI (770) example_connect: Waiting for IP(s)[0m
+I (3180) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3440) wifi:state: init -> auth (b0)
+I (3450) wifi:state: auth -> assoc (0)
+I (3460) wifi:state: assoc -> run (10)
+I (3500) wifi:connected with Livebox6-354B, aid = 27, channel 6, BW20, bssid = 2c:93:fb:20:53:95
+I (3500) wifi:security: WPA2-PSK, phy: bgn, rssi: -41
+I (3500) wifi:pm start, type: 1
+
+I (3500) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3570) wifi:<ba-add>idx:0 (ifx:0, 2c:93:fb:20:53:95), tid:0, ssn:1, winSize:64
+I (3590) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4510) esp_netif_handlers: example_netif_sta ip: 192.168.1.29, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4510) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.29[0m
+[0;32mI (4600) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:aa42:e3ff:fece:1a50, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4600) example_common: Connected to example_netif_sta[0m
+[0;32mI (4610) example_common: - IPv4 address: 192.168.1.29,[0m
+[0;32mI (4610) example_common: - IPv6 address: fe80:0000:0000:0000:aa42:e3ff:fece:1a50, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+temperature_value = 19.000000
+temperature_voltage_value = 694
+lumenes_value = 6.000000
+[0;32mI (5140) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+
+[0;32mI (5140) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (5600) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (5600) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (5600) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (5600) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (5610) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (5620) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 701
+lumenes_value = 22.000000
+[0;32mI (7290) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":320}}
+[0;32mI (7290) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (7900) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (7900) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (7900) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (7900) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (7910) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (7910) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 702
+lumenes_value = 6.000000
+[0;32mI (9130) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":235}}
+[0;32mI (9130) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (9600) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (9610) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (9610) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (9610) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (9610) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (9620) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 695
+lumenes_value = 6.000000
+[0;32mI (11280) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":93}}
+[0;32mI (11280) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (11890) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (11890) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (11890) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (11890) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (11900) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (11910) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 690
+lumenes_value = 6.000000
+[0;32mI (13440) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":89}}
+[0;32mI (13440) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (14040) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (14040) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (14040) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (14040) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (14050) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (14060) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 705
+lumenes_value = 6.000000
+[0;32mI (15280) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":99}}
+[0;32mI (15280) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (15890) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (15890) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (15890) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (15890) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (15890) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (15900) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 698
+lumenes_value = 6.000000
+[0;32mI (17430) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":93}}
+[0;32mI (17430) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (18040) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (18040) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (18040) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (18040) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (18050) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (18050) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 21.000000
+temperature_voltage_value = 711
+lumenes_value = 6.000000
+[0;32mI (19030) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":83}}
+[0;32mI (19030) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (19570) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (19570) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (19570) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (19570) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (19580) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (19590) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 703
+lumenes_value = 6.000000
+[0;32mI (21430) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":73}}
+[0;32mI (21430) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (22030) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (22030) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (22030) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (22030) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (22040) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (22050) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 706
+lumenes_value = 6.000000
+[0;32mI (23260) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":70}}
+[0;32mI (23260) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (23870) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (23870) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (23880) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (23880) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (23880) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (23890) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 701
+lumenes_value = 6.000000
+[0;32mI (25450) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":68}}
+[0;32mI (25450) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (26030) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (26030) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (26030) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (26030) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (26040) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (26040) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 688
+lumenes_value = 6.000000
+[0;32mI (27570) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":59}}
+[0;32mI (27570) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (28180) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (28180) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (28180) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (28180) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (28190) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (28200) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 704
+lumenes_value = 8.000000
+[0;32mI (29410) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":65}}
+[0;32mI (29410) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (30020) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (30020) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (30020) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (30020) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (30030) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (30040) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 701
+lumenes_value = 11.000000
+[0;32mI (31250) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":78}}
+[0;32mI (31250) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (31550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (31550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (31550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (31550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (31560) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (31570) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 702
+lumenes_value = 14.000000
+[0;32mI (33400) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":103}}
+[0;32mI (33400) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (34010) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (34010) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (34010) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (34020) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (34020) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (34030) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 707
+lumenes_value = 17.000000
+[0;32mI (35550) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":145}}
+[0;32mI (35550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (36160) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (36160) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (36160) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (36170) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (36170) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (36180) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 702
+lumenes_value = 19.000000
+[0;32mI (37400) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":173}}
+[0;32mI (37400) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (37700) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (37700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (37700) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (37700) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (37700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (37710) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 702
+lumenes_value = 21.000000
+[0;32mI (39550) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":193}}
+[0;32mI (39550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (40160) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (40160) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (40160) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (40160) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (40160) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (40170) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 688
+lumenes_value = 23.000000
+[0;32mI (41700) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":218}}
+[0;32mI (41700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (42320) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (42320) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (42320) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (42320) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (42320) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (42330) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 703
+lumenes_value = 23.000000
+[0;32mI (43540) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":248}}
+[0;32mI (43540) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (43840) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (43840) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (43840) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (43850) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (43850) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (43860) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 700
+lumenes_value = 23.000000
+[0;32mI (45690) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":256}}
+[0;32mI (45690) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (46320) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (46320) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (46320) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (46320) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (46320) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (46330) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 699
+lumenes_value = 22.000000
+[0;32mI (47530) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":255}}
+[0;32mI (47530) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (48140) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (48140) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (48140) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (48140) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (48150) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (48160) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 700
+lumenes_value = 22.000000
+[0;32mI (49700) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":264}}
+[0;32mI (49700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (49990) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (49990) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (49990) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (49990) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (49990) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (50000) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 696
+lumenes_value = 19.000000
+[0;32mI (51530) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":263}}
+[0;32mI (51530) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (52140) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (52140) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (52140) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (52140) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (52150) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (52150) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 21.000000
+temperature_voltage_value = 717
+lumenes_value = 16.000000
+[0;32mI (53680) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":240}}
+[0;32mI (53680) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (54290) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (54290) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (54290) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (54290) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (54290) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (54300) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 704
+lumenes_value = 13.000000
+[0;32mI (55820) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":218}}
+[0;32mI (55830) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (56130) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (56130) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (56130) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (56130) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (56140) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (56150) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 701
+lumenes_value = 11.000000
+[0;32mI (57670) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":197}}
+[0;32mI (57680) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (58280) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (58280) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (58280) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (58280) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (58290) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (58300) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 699
+lumenes_value = 10.000000
+[0;32mI (59830) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":166}}
+[0;32mI (59830) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (60430) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (60430) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (60430) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (60430) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (60440) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (60450) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 688
+lumenes_value = 9.000000
+[0;32mI (61660) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":157}}
+[0;32mI (61670) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (62290) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (62290) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (62290) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (62290) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (62290) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (62300) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 703
+lumenes_value = 9.000000
+[0;32mI (63810) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":149}}
+[0;32mI (63810) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (64430) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (64430) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (64430) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (64430) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (64430) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (64440) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 703
+lumenes_value = 8.000000
+[0;32mI (65660) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":131}}
+[0;32mI (65660) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (66270) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (66270) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (66270) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (66270) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (66280) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (66280) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 704
+lumenes_value = 7.000000
+[0;32mI (67810) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":123}}
+[0;32mI (67820) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (68430) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (68430) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (68430) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (68430) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (68430) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (68450) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 702
+lumenes_value = 7.000000
+[0;32mI (69960) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":112}}
+[0;32mI (69960) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (70570) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (70570) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (70570) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (70570) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (70570) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (70580) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 688
+lumenes_value = 6.000000
+[0;32mI (71800) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":105}}
+[0;32mI (71800) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (72410) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (72410) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (72410) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (72410) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (72420) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (72430) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 705
+lumenes_value = 6.000000
+[0;32mI (73950) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":90}}
+[0;32mI (73960) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (74570) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (74570) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (74570) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (74570) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (74580) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (74580) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 695
+lumenes_value = 6.000000
+[0;32mI (75790) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":77}}
+[0;32mI (75790) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (76410) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (76410) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (76410) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (76410) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (76410) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (76420) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 689
+lumenes_value = 6.000000
+[0;32mI (77950) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":68}}
+[0;32mI (77950) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (78560) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (78560) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (78560) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (78560) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (78570) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (78570) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 694
+lumenes_value = 6.000000
+[0;32mI (80110) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":61}}
+[0;32mI (80110) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (80550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (80550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (80550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (80550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (80560) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (80560) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 693
+lumenes_value = 6.000000
+[0;32mI (81940) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":62}}
+[0;32mI (81940) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (82550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (82550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (82550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (82550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (82560) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (82570) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 699
+lumenes_value = 6.000000
+[0;32mI (84090) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":58}}
+[0;32mI (84090) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (84700) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (84700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (84700) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (84710) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (84700) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (84720) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 698
+lumenes_value = 6.000000
+[0;32mI (85930) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":61}}
+[0;32mI (85930) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (86550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (86550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (86550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (86550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (86550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (86560) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 697
+lumenes_value = 7.000000
+[0;32mI (88080) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":61}}
+[0;32mI (88090) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (88690) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (88700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (88690) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (88700) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (88700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (88710) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 689
+lumenes_value = 7.000000
+[0;32mI (89930) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":64}}
+[0;32mI (89930) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (90540) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (90540) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (90540) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (90540) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (90550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (90550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 694
+lumenes_value = 8.000000
+[0;32mI (92080) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":70}}
+[0;32mI (92080) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (92690) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (92690) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (92690) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (92690) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (92700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (92700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 690
+lumenes_value = 9.000000
+[0;32mI (94230) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":80}}
+[0;32mI (94230) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (94840) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (94840) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (94840) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (94840) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (94850) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (94860) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 689
+lumenes_value = 9.000000
+[0;32mI (96070) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":77}}
+[0;32mI (96070) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (96680) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (96680) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (96680) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (96680) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (96690) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (96700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 689
+lumenes_value = 11.000000
+[0;32mI (97920) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":90}}
+[0;32mI (97920) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (98530) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (98530) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (98530) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (98530) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (98530) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (98540) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 691
+lumenes_value = 13.000000
+[0;32mI (100070) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":106}}
+[0;32mI (100070) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (100690) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (100690) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (100690) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (100690) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (100690) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (100700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 691
+lumenes_value = 15.000000
+[0;32mI (102220) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":126}}
+[0;32mI (102220) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (102830) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (102830) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (102830) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (102830) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (102830) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (102840) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 702
+lumenes_value = 16.000000
+[0;32mI (104370) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":144}}
+[0;32mI (104370) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (105000) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (105000) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (105000) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (105000) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (105010) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (105020) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 699
+lumenes_value = 10.000000
+[0;32mI (106210) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":158}}
+[0;32mI (106220) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (106820) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (106820) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (106820) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (106820) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (106830) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (106840) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 688
+lumenes_value = 9.000000
+[0;32mI (108360) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":148}}
+[0;32mI (108360) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (108970) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (108970) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (108970) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (108970) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (108980) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (108990) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 702
+lumenes_value = 8.000000
+[0;32mI (110190) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":139}}
+[0;32mI (110200) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (110830) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (110830) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (110830) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (110840) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (110830) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (110850) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 695
+lumenes_value = 8.000000
+[0;32mI (112350) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":131}}
+[0;32mI (112350) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (112960) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (112970) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (112970) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (112970) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (112970) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (112980) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 692
+lumenes_value = 6.000000
+[0;32mI (114190) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":119}}
+[0;32mI (114190) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (114810) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (114810) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (114810) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (114810) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (114810) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (114820) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 702
+lumenes_value = 6.000000
+[0;32mI (116350) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":91}}
+[0;32mI (116350) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (116960) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (116960) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (116960) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (116960) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (116970) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (116970) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 697
+lumenes_value = 6.000000
+[0;32mI (118190) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":86}}
+[0;32mI (118190) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (118640) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (118640) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (118640) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (118640) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (118650) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (118660) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 691
+lumenes_value = 6.000000
+[0;32mI (120340) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":70}}
+[0;32mI (120340) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (120770) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (120770) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (120770) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (120770) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (120780) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (120790) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 688
+lumenes_value = 6.000000
+[0;32mI (122490) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":64}}
+[0;32mI (122490) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (123100) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (123100) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (123100) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (123100) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (123110) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (123120) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 22.000000
+temperature_voltage_value = 729
+lumenes_value = 6.000000
+[0;32mI (124340) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":64}}
+[0;32mI (124340) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (124800) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (124800) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (124800) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (124800) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (124810) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (124820) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 688
+lumenes_value = 6.000000
+[0;32mI (126480) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":58}}
+[0;32mI (126490) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (127100) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (127100) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (127100) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (127100) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (127100) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (127110) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 693
+lumenes_value = 6.000000
+[0;32mI (128330) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":61}}
+[0;32mI (128330) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (128940) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (128940) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (128940) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (128940) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (128950) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (128950) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 688
+lumenes_value = 6.000000
+[0;32mI (130480) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":53}}
+[0;32mI (130480) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (131090) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (131090) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (131090) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (131090) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (131090) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (131110) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 704
+lumenes_value = 6.000000
+[0;32mI (132320) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":51}}
+[0;32mI (132320) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (132930) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (132930) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (132940) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (132930) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (132940) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (132950) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 691
+lumenes_value = 6.000000
+[0;32mI (134470) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":56}}
+[0;32mI (134480) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (135090) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (135090) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (135090) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (135090) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (135090) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (135100) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 693
+lumenes_value = 6.000000
+[0;32mI (136630) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":57}}
+[0;32mI (136640) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (137230) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (137230) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (137240) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (137240) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (137240) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (137250) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 690
+lumenes_value = 6.000000
+[0;32mI (138470) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":50}}
+[0;32mI (138470) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (139080) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (139080) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (139080) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (139080) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (139080) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (139090) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 699
+lumenes_value = 6.000000
+[0;32mI (140610) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":52}}
+[0;32mI (140610) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (141230) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (141230) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (141230) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (141230) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (141240) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (141240) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 694
+lumenes_value = 6.000000
+[0;32mI (142460) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":61}}
+[0;32mI (142460) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (143070) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (143070) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (143070) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (143070) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (143080) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (143090) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 691
+lumenes_value = 6.000000
+[0;32mI (144610) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":53}}
+[0;32mI (144610) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (145220) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (145220) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (145220) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (145220) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (145220) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (145230) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 703
+lumenes_value = 8.000000
+[0;32mI (146450) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":51}}
+[0;32mI (146450) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (147060) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (147070) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (147070) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (147070) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (147070) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (147080) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 691
+lumenes_value = 9.000000
+[0;32mI (148600) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":69}}
+[0;32mI (148600) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (149210) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (149220) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (149220) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (149220) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (149220) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (149230) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 689
+lumenes_value = 10.000000
+[0;32mI (150750) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":75}}
+[0;32mI (150750) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (151370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (151370) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (151370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (151370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (151380) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (151390) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 693
+lumenes_value = 11.000000
+[0;32mI (152600) HTTP_CLIENT: HTTP GET Status = 200, content_length = 22[0m
+{"client":{"agua":99}}
+[0;32mI (152600) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (153210) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (153210) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (153210) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (153210) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (153220) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (153220) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 701
+lumenes_value = 12.000000
+[0;32mI (154750) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":111}}
+[0;32mI (154750) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (155360) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (155360) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (155360) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (155360) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (155370) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (155370) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 695
+lumenes_value = 10.000000
+[0;32mI (156590) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":184}}
+[0;32mI (156590) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (157200) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (157200) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (157200) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (157200) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (157210) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (157220) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 704
+lumenes_value = 13.000000
+[0;32mI (158740) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":161}}
+[0;32mI (158750) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (159350) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (159350) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (159350) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (159350) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (159360) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (159370) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+/IRAM[0m
+[0;32m�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-892-g692c1fcc52 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 16 2023 18:21:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=27d70h (163184) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037d98 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=00037da4 vaddr=3ffb0000 size=03ca8h ( 15528) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=0003ba54 vaddr=40080000 size=045c4h ( 17860) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9ccb0h (642224) map[0m
+[0;32mI (403) esp_image: segment 5: paddr=000dccd8 vaddr=400845c4 size=12190h ( 74128) load[0m
+[0;32mI (443) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (443) boot: Disabling RNG early entropy source...[0m
+[0;32mI (455) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu start user code[0m
+[0;32mI (464) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (464) cpu_start: Application information:[0m
+[0;32mI (467) cpu_start: Project name:     weather-compass[0m
+[0;32mI (472) cpu_start: App version:      1[0m
+[0;32mI (477) cpu_start: Compile time:     Dec 16 2023 18:22:50[0m
+[0;32mI (483) cpu_start: ELF file SHA256:  8336f40b3...[0m
+[0;32mI (488) cpu_start: ESP-IDF:          v5.3-dev-892-g692c1fcc52[0m
+[0;32mI (495) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (499) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (504) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (509) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (516) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (522) heap_init: At 3FFB84A0 len 00027B60 (158 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 40096754 len 000098AC (38 KiB): IRAM[0m
+[0;32mI (549) spi_flash: detected chip: generic[0m
+[0;32mI (552) spi_flash: flash io: dio[0m
+[0;33mW (556) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (570) main_task: Started on CPU0[0m
+[0;32mI (580) main_task: Calling app_main()[0m
+Calibration Success
+Calibration Success
+Calibration Success
+Calibration Success
+[0;32mI (600) example_connect: Start example_connect.[0m
+I (610) wifi:wifi driver task: 3ffc0168, prio:23, stack:6656, core=0
+I (610) wifi:wifi firmware version: 8e5c2b1
+I (610) wifi:wifi certification version: v7.0
+I (610) wifi:config NVS flash: enabled
+I (610) wifi:config nano formating: disabled
+I (620) wifi:Init data frame dynamic rx buffer num: 32
+I (620) wifi:Init static rx mgmt buffer num: 5
+I (630) wifi:Init management short buffer num: 32
+I (630) wifi:Init dynamic tx buffer num: 32
+I (630) wifi:Init static rx buffer size: 1600
+I (640) wifi:Init static rx buffer num: 10
+I (640) wifi:Init dynamic rx buffer num: 32
+[0;32mI (650) wifi_init: rx ba win: 6[0m
+[0;32mI (650) wifi_init: tcpip mbox: 32[0m
+[0;32mI (650) wifi_init: udp mbox: 6[0m
+[0;32mI (660) wifi_init: tcp mbox: 6[0m
+[0;32mI (660) wifi_init: tcp tx win: 5744[0m
+[0;32mI (670) wifi_init: tcp rx win: 5744[0m
+[0;32mI (670) wifi_init: tcp mss: 1440[0m
+[0;32mI (670) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (680) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (680) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (770) wifi:mode : sta (a8:42:e3:ce:1a:50)
+I (770) wifi:enable tsf
+[0;32mI (770) example_connect: Connecting to Livebox6-354B...[0m
+[0;32mI (770) example_connect: Waiting for IP(s)[0m
+I (3180) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3440) wifi:state: init -> auth (b0)
+I (3450) wifi:state: auth -> assoc (0)
+I (3460) wifi:state: assoc -> run (10)
+I (3480) wifi:connected with Livebox6-354B, aid = 23, channel 6, BW20, bssid = 2c:93:fb:20:53:95
+I (3480) wifi:security: WPA2-PSK, phy: bgn, rssi: -40
+I (3480) wifi:pm start, type: 1
+
+I (3480) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3520) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4600) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:aa42:e3ff:fece:1a50, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (4900) wifi:<ba-add>idx:0 (ifx:0, 2c:93:fb:20:53:95), tid:0, ssn:1, winSize:64
+[0;32mI (5500) esp_netif_handlers: example_netif_sta ip: 192.168.1.29, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (5500) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.29[0m
+[0;32mI (5510) example_common: Connected to example_netif_sta[0m
+[0;32mI (5510) example_common: - IPv4 address: 192.168.1.29,[0m
+[0;32mI (5520) example_common: - IPv6 address: fe80:0000:0000:0000:aa42:e3ff:fece:1a50, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+temperature_value = -50.000000
+temperature_voltage_value = 0
+lumenes_value = 6.000000
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-892-g692c1fcc52 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 16 2023 18:21:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=27d70h (163184) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037d98 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=00037da4 vaddr=3ffb0000 size=03ca8h ( 15528) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=0003ba54 vaddr=40080000 size=045c4h ( 17860) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9ccb0h (642224) map[0m
+[0;32mI (403) esp_image: segment 5: paddr=000dccd8 vaddr=400845c4 size=12190h ( 74128) load[0m
+[0;32mI (443) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (443) boot: Disabling RNG early entropy source...[0m
+[0;32mI (455) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu start user code[0m
+[0;32mI (464) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (464) cpu_start: Application information:[0m
+[0;32mI (467) cpu_start: Project name:     weather-compass[0m
+[0;32mI (472) cpu_start: App version:      1[0m
+[0;32mI (477) cpu_start: Compile time:     Dec 16 2023 18:22:50[0m
+[0;32mI (483) cpu_start: ELF file SHA256:  8336f40b3...[0m
+[0;32mI (488) cpu_start: ESP-IDF:          v5.3-dev-892-g692c1fcc52[0m
+[0;32mI (495) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (499) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (504) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (509) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (516) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (522) heap_init: At 3FFB84A0 len 00027B60 (158 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 40096754 len 000098AC (38 KiB): IRAM[0m
+[0;32mI (549) spi_flash: detected chip: generic[0m
+[0;32mI (552) spi_flash: flash io: dio[0m
+[0;33mW (556) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (570) main_task: Started on CPU0[0m
+[0;32mI (580) main_task: Calling app_main()[0m
+Calibration Success
+Calibration Success
+Calibration Success
+Calibration Success
+[0;32mI (600) example_connect: Start example_connect.[0m
+I (610) wifi:wifi driver task: 3ffc0168, prio:23, stack:6656, core=0
+I (610) wifi:wifi firmware version: 8e5c2b1
+I (610) wifi:wifi certification version: v7.0
+I (610) wifi:config NVS flash: enabled
+I (610) wifi:config nano formating: disabled
+I (620) wifi:Init data frame dynamic rx buffer num: 32
+I (620) wifi:Init static rx mgmt buffer num: 5
+I (630) wifi:Init management short buffer num: 32
+I (630) wifi:Init dynamic tx buffer num: 32
+I (630) wifi:Init static rx buffer size: 1600
+I (640) wifi:Init static rx buffer num: 10
+I (640) wifi:Init dynamic rx buffer num: 32
+[0;32mI (650) wifi_init: rx ba win: 6[0m
+[0;32mI (650) wifi_init: tcpip mbox: 32[0m
+[0;32mI (650) wifi_init: udp mbox: 6[0m
+[0;32mI (660) wifi_init: tcp mbox: 6[0m
+[0;32mI (660) wifi_init: tcp tx win: 5744[0m
+[0;32mI (670) wifi_init: tcp rx win: 5744[0m
+[0;32mI (670) wifi_init: tcp mss: 1440[0m
+[0;32mI (670) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (680) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (680) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (770) wifi:mode : sta (a8:42:e3:ce:1a:50)
+I (770) wifi:enable tsf
+[0;32mI (770) example_connect: Connecting to Livebox6-354B...[0m
+[0;32mI (770) example_connect: Waiting for IP(s)[0m
+I (3190) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3440) wifi:state: init -> auth (b0)
+I (3440) wifi:state: auth -> assoc (0)
+I (3450) wifi:state: assoc -> run (10)
+I (3500) wifi:connected with Livebox6-354B, aid = 28, channel 6, BW20, bssid = 2c:93:fb:20:53:95
+I (3500) wifi:security: WPA2-PSK, phy: bgn, rssi: -42
+I (3500) wifi:pm start, type: 1
+
+I (3500) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3570) wifi:<ba-add>idx:0 (ifx:0, 2c:93:fb:20:53:95), tid:0, ssn:1, winSize:64
+I (3580) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4510) esp_netif_handlers: example_netif_sta ip: 192.168.1.29, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4510) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.29[0m
+[0;32mI (4600) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:aa42:e3ff:fece:1a50, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4600) example_common: Connected to example_netif_sta[0m
+[0;32mI (4610) example_common: - IPv4 address: 192.168.1.29,[0m
+[0;32mI (4610) example_common: - IPv6 address: fe80:0000:0000:0000:aa42:e3ff:fece:1a50, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+temperature_value = 22.000000
+temperature_voltage_value = 721
+lumenes_value = 11.000000
+[0;32mI (5240) HTTP_CLIENT: HTTP GET Status = 200, content_length = 23[0m
+{"client":{"agua":188}}
+[0;32mI (5240) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (5640) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (5640) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (5650) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (5650) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (5660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (5660) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 25.000000
+temperature_voltage_value = 752
+lumenes_value = 10.000000
+[0;32mI (7390) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (7390) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (8000) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (8000) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (8000) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (8000) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (8000) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (8010) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 22.000000
+temperature_voltage_value = 727
+lumenes_value = 11.000000
+[0;32mI (9230) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (9230) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (9650) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (9650) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (9660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (9660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (9660) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (9660) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 26.000000
+temperature_voltage_value = 767
+lumenes_value = 11.000000
+[0;32mI (11070) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (11070) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (11680) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (11690) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (11690) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (11690) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (11690) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (11700) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 25.000000
+temperature_voltage_value = 751
+lumenes_value = 11.000000
+[0;32mI (13220) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (13220) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (13650) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (13650) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (13650) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (13650) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (13660) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (13670) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 26.000000
+temperature_voltage_value = 769
+lumenes_value = 11.000000
+[0;32mI (15380) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (15380) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (15980) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (15990) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (15990) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (15990) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (15990) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (16000) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 23.000000
+temperature_voltage_value = 731
+lumenes_value = 11.000000
+[0;32mI (17220) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (17220) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (17830) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (17830) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (17830) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (17830) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (17840) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (17840) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 25.000000
+temperature_voltage_value = 755
+lumenes_value = 11.000000
+[0;32mI (19370) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (19370) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (19980) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (19980) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (19980) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (19980) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (19990) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (19990) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 23.000000
+temperature_voltage_value = 737
+lumenes_value = 10.000000
+[0;32mI (21520) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (21520) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (22130) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (22130) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (22130) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (22130) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (22140) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (22140) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 24.000000
+temperature_voltage_value = 745
+lumenes_value = 10.000000
+[0;32mI (23360) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (23360) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (23970) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (23970) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (23970) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (23970) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (23980) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (23990) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 23.000000
+temperature_voltage_value = 730
+lumenes_value = 10.000000
+[0;32mI (25200) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (25200) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (25820) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (25820) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (25820) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (25820) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (25820) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (25830) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 24.000000
+temperature_voltage_value = 749
+lumenes_value = 10.000000
+[0;32mI (27360) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+
+[0;32mI (27360) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (27970) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (27970) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (27970) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (27970) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (27970) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (27980) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 25.000000
+temperature_voltage_value = 752
+lumenes_value = 10.000000
+[0;32mI (29510) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (29510) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (30120) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (30120) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (30120) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (30120) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (30130) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (30130) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 23.000000
+temperature_voltage_value = 737
+lumenes_value = 9.000000
+[0;32mI (31350) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (31350) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (31960) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (31960) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (31960) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (31960) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (31970) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (31970) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 25.000000
+temperature_voltage_value = 751
+lumenes_value = 9.000000
+[0;32mI (33500) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (33500) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (34110) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (34110) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (34110) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (34110) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (34120) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (34120) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 22.000000
+temperature_voltage_value = 727
+lumenes_value = 9.000000
+[0;32mI (35650) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (35650) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (36260) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (36260) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (36260) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (36260) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (36260) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (36280) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 24.000000
+temperature_voltage_value = 746
+lumenes_value = 10.000000
+[0;32mI (37500) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (37500) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (38100) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (38100) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (38100) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (38110) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (38110) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (38120) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 23.000000
+temperature_voltage_value = 738
+lumenes_value = 9.000000
+[0;32mI (39660) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (39670) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (40250) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (40260) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (40260) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (40260) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (40260) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (40270) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 22.000000
+temperature_voltage_value = 720
+lumenes_value = 8.000000
+[0;32mI (41490) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (41490) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (42100) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (42100) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (42100) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (42100) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (42100) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (42110) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 698
+lumenes_value = 6.000000
+[0;32mI (43640) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (43640) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (44260) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (44260) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (44260) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (44260) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (44270) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (44270) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 15.000000
+temperature_voltage_value = 659
+lumenes_value = 6.000000
+[0;32mI (45480) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (45480) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (45710) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (45710) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (45710) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (45720) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (45740) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (45740) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 15.000000
+temperature_voltage_value = 654
+lumenes_value = 6.000000
+[0;32mI (47630) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (47630) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (48240) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (48240) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (48240) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (48240) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (48250) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (48260) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 15.000000
+temperature_voltage_value = 651
+lumenes_value = 6.000000
+[0;32mI (49780) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (49780) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (50390) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (50390) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (50390) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (50390) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (50400) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (50410) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 15.000000
+temperature_voltage_value = 657
+lumenes_value = 6.000000
+[0;32mI (51630) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (51630) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (52230) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (52230) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (52230) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (52230) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (52240) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (52250) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 16.000000
+temperature_voltage_value = 663
+lumenes_value = 6.000000
+[0;32mI (53780) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (53780) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (54380) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (54390) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (54390) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (54390) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (54390) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (54400) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 15.000000
+temperature_voltage_value = 656
+lumenes_value = 7.000000
+[0;32mI (55620) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (55620) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (56230) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (56230) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (56230) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (56230) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (56240) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (56250) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 17.000000
+temperature_voltage_value = 671
+lumenes_value = 7.000000
+[0;32mI (57770) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (57770) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (58380) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (58380) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (58380) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (58380) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (58390) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (58400) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 17.000000
+temperature_voltage_value = 673
+lumenes_value = 8.000000
+[0;32mI (59910) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (59920) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (60530) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (60530) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (60530) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (60530) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (60540) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (60550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 686
+lumenes_value = 8.000000
+[0;32mI (61760) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (61760) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (62370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (62370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (62370) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (62370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (62390) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (62380) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 21.000000
+temperature_voltage_value = 712
+lumenes_value = 9.000000
+[0;32mI (63910) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (63910) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (64160) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (64160) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (64160) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (64170) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (64170) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (64170) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 689
+lumenes_value = 9.000000
+[0;32mI (65760) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (65760) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (66370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (66370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (66370) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (66370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (66370) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (66380) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 21.000000
+temperature_voltage_value = 711
+lumenes_value = 10.000000
+[0;32mI (67910) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (67910) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (68520) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (68520) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (68520) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (68520) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (68530) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (68530) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 22.000000
+temperature_voltage_value = 720
+lumenes_value = 10.000000
+[0;32mI (69750) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (69750) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (70370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (70370) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (70370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (70370) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (70380) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (70380) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 704
+lumenes_value = 9.000000
+[0;32mI (71900) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (71910) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (72520) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (72520) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (72520) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (72520) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (72530) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (72530) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 21.000000
+temperature_voltage_value = 719
+lumenes_value = 9.000000
+[0;32mI (74070) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (74070) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (74660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (74660) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (74660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (74660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (74670) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (74680) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 20.000000
+temperature_voltage_value = 701
+lumenes_value = 10.000000
+[0;32mI (75900) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (75910) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (76510) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (76510) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (76510) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (76510) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (76510) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (76520) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 21.000000
+temperature_voltage_value = 712
+lumenes_value = 9.000000
+[0;32mI (78050) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (78050) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (78660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (78660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (78660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (78670) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (78660) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (78660) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 690
+lumenes_value = 9.000000
+[0;32mI (79890) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (79890) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (80550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (80550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (80550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (80550) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (80550) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (80560) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 688
+lumenes_value = 9.000000
+[0;32mI (82040) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (82050) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (82660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (82660) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (82660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (82660) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (82670) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (82670) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 683
+lumenes_value = 8.000000
+[0;32mI (83880) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (83880) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (84490) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (84490) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (84490) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (84490) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (84500) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (84510) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 16.000000
+temperature_voltage_value = 668
+lumenes_value = 7.000000
+[0;32mI (86030) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (86030) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (86640) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (86650) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (86650) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (86650) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (86650) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (86660) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 14.000000
+temperature_voltage_value = 645
+lumenes_value = 6.000000
+[0;32mI (88180) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (88180) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (88590) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (88590) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (88600) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (88600) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (88600) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (88610) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 15.000000
+temperature_voltage_value = 657
+lumenes_value = 6.000000
+[0;32mI (90030) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (90030) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (90640) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (90640) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (90640) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (90640) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (90650) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (90650) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 16.000000
+temperature_voltage_value = 661
+lumenes_value = 6.000000
+[0;32mI (92170) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (92180) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (92790) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (92790) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (92790) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (92790) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (92800) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (92800) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 15.000000
+temperature_voltage_value = 659
+lumenes_value = 6.000000
+[0;32mI (94020) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (94020) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (94630) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (94630) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (94630) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (94630) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (94630) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (94640) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 18.000000
+temperature_voltage_value = 681
+lumenes_value = 6.000000
+[0;32mI (96180) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (96180) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (96780) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (96780) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (96780) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (96780) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (96790) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (96800) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 19.000000
+temperature_voltage_value = 693
+lumenes_value = 7.000000
+[0;32mI (98010) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (98020) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (98620) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (98620) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (98620) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (98630) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (98630) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (98640) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 23.000000
+temperature_voltage_value = 731
+lumenes_value = 9.000000
+[0;32mI (100160) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (100160) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (100770) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (100780) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (100780) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (100780) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (100780) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (100790) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 26.000000
+temperature_voltage_value = 763
+lumenes_value = 10.000000
+[0;32mI (102310) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (102320) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (102920) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (102930) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (102930) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (102930) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (102930) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (102940) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 23.000000
+temperature_voltage_value = 735
+lumenes_value = 10.000000
+[0;32mI (104160) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (104160) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (104770) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (104770) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (104770) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (104770) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (104780) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (104780) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 31.000000
+temperature_voltage_value = 817
+lumenes_value = 15.000000
+[0;32mI (106310) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (106310) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (106920) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (106920) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (106920) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (106920) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (106930) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (106940) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 33.000000
+temperature_voltage_value = 832
+lumenes_value = 16.000000
+[0;32mI (108150) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (108150) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (108760) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (108760) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (108760) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (108760) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (108770) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (108780) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 32.000000
+temperature_voltage_value = 827
+lumenes_value = 17.000000
+[0;32mI (110300) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (110300) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (110910) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (110910) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (110910) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (110920) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (110920) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (110930) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 32.000000
+temperature_voltage_value = 827
+lumenes_value = 18.000000
+[0;32mI (112140) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (112140) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (112780) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (112780) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (112780) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (112780) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (112790) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (112800) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 34.000000
+temperature_voltage_value = 842
+lumenes_value = 19.000000
+[0;32mI (114300) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (114300) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (114910) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (114910) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (114910) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (114910) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (114910) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (114920) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+temperature_value = 36.000000
+temperature_voltage_value = 868
+lumenes_value = 19.000000
+[0;32mI (116450) HTTP_CLIENT: HTTP GET Status = 200, content_length = 21[0m
+{"client":{"agua":0}}
+[0;32mI (116450) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (117050) HTTP_CLIENT: HTTP POST Status = 200, content_length = 0[0m
+[0;32mI (117050) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (117050) HTTP_CLIENT: HTTP POST Status = 200, content_length = 

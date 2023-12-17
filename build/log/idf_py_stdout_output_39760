@@ -1,0 +1,22 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/luisma/Escritorio/SBC/weather-compass/build/bootloader/esp-idf/esptool_py && /home/luisma/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/luisma/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/luisma/Escritorio/SBC/weather-compass/build/bootloader/bootloader.bin
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/luisma/Escritorio/SBC/weather-compass/main/main.c: In function 'app_main':
+/home/luisma/Escritorio/SBC/weather-compass/main/main.c:26:9: warning: variable 'agua_voltage' set but not used [-Wunused-but-set-variable]
+   26 |     int agua_voltage = 0;
+      |         ^~~~~~~~~~~~
+/home/luisma/Escritorio/SBC/weather-compass/main/main.c:23:9: warning: variable 'lumenes_value' set but not used [-Wunused-but-set-variable]
+   23 |     int lumenes_value = 0;
+      |         ^~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable weather-compass.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/luisma/Escritorio/SBC/weather-compass/build/weather-compass.bin
+[7/7] cd /home/luisma/Escritorio/SBC/weather-compass/build/esp-idf/esptool_py && /home/luisma/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/luisma/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/luisma/Escritorio/SBC/weather-compass/build/partition_table/partition-table.bin /home/luisma/Escritorio/SBC/weather-compass/build/weather-compass.bin
+weather-compass.bin binary size 0xdedd0 bytes. Smallest app partition is 0x100000 bytes. 0x21230 bytes (13%) free.
